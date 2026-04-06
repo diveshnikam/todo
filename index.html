@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Nested Todo App</h1>
+
+      <div class="top-input-section">
+        <div class="top-input-row">
+          <input
+            type="text"
+            id="todoInput"
+            placeholder="Add a new task..."
+            autocomplete="off"
+          />
+          <button id="addTodoButton">Add Todo</button>
+        </div>
+        <p id="errorMessage" class="error-message"></p>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <div id="topLevelDropZone" class="top-level-drop-zone">
+        Drop here to move subtask to root level
+      </div>
+
+      <ul id="todoList" class="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
